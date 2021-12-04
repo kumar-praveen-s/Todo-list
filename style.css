@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading-container{
+    width: 100%;
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading-style{
+    font-weight: 100;
+    color: #5E454B;
+    font-family: 'Poppins', sans-serif;
+}
+.heading1-style{
+    font-size:30px;
+    font-family: 'Poppins', sans-serif;
+    color: #5E454B;
+}
+.flex-container{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.box{
+    width: 200px;
+    height: 300px;
+    border: 3px inset orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #EADEB8;
+    position: relative;
+}
+.box1{
+    width: 200px;
+    height: 300px;
+    border: 3px inset orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #EADEB8;
+    position: absolute;
+    top: 33%;
+    left: 35%;
+}
+.box-heading{
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    text-decoration-line: none;
+    color: darkorange;
+}
+.box-heading1{
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+    color: orange;
+}
+.style-ct{
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    color: darkorange;
+    text-decoration-line: line-through;
+}
+.style-ct1{
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    color: darkorange;
+    text-decoration-line: line-through;
+}
+.style-pt{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-weight: 600;
+}
+.style-pt1{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-weight: 600;
+}
+.card1{
+    width:200px;
+    position: relative;
+    top: 100px;
+    left: 35%;
+    padding-left: 10px;
+    font-size: 35px;
+    color: #3E065F;
+    z-index: 1;
+    background-color: white;
+}
+.line-style{
+    width: 50%;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    top: 123px;
+    left: 17%;
+}
+.style-fc{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+}
+.style-arrow-left{
+    position: absolute;
+    text-decoration-line: none;
+    color: orange;
+    font-size: 25px;
+    top: 25%;
+    left:35%;
+}
+.blur-bg{
+    filter: blur(15px);
+}
+.newlist-style{
+    width: 400px;
+    line-height: 50px;
+    border: 3px solid orange;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 20px;
+    color: orange;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #FFDFAF;
+}
+.text-style {
+    width:250px ;
+    height: 30px;
+    border:2px solid orange;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #FFDFAF;
+}
+.btn-add-style {
+    width: 70px;
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.exit-style {
+    position: absolute;
+    right: 10px;
+    color: darkorange;
+}
+@media screen and (max-width:600px){
+    .heading-container{
+        font-size: 25px;
+    }
+    .heading1-style{
+        display: none;
+    }
+    .flex-container{
+        height: 130vh;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        height: 100px;
+    }
+    .box-heading{
+        color: gray;
+        font-size: 25px;
+        border-bottom: 0px;
+    }
+    .style-ct{
+        display: none;
+    }
+    .style-pt{
+        display: none;
+    }
+    .line-style{
+        display: none;
+    }
+    .card1{
+        left: 20%;
+    }
+    .box1{
+        left:20%;
+    }
+    .style-arrow-left{
+        left: 20%;
+    }
+    .newlist-style{
+        width: 80%;
+        left: 10%;
+    }
+    .text-style{
+        width: 60%;
+    }
+    .btn-add-style{
+        width: 20%;
+    }
+}
+@media (min-height:600px){
+    .flex-container{
+        height: 130vh;
+    }
+}
+@media (min-height:1000px){
+    .flex-container{
+        height: 70vh;
+    }
+}
+@media screen and (min-width:1200px){
+    .flex-container{
+        padding: 50px;
+        height:1000px;
+    }
+}
