@@ -23,11 +23,12 @@
     color: #5E454B;
 }
 .flex-container{
-    width: 100%;
-    height: 100vh;
+    width: 800px;
+    height: 700px;
     padding: 30px;
     position: relative;
     top: 100px;
+    left: 300px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -173,7 +174,9 @@
         display: none;
     }
     .flex-container{
+        width: 100%;
         height: 130vh;
+        left: 0px;
         flex-direction: column;
     }
     .box{
@@ -215,19 +218,22 @@
         width: 20%;
     }
 }
-@media (min-height:600px){
+@media screen and (width:768px) and (height:1024px){
     .flex-container{
-        height: 130vh;
+        width: 100%;
+        height: 750px;
+        left: 0px;
     }
 }
-@media (min-height:1000px){
+@media (width:1024px){
     .flex-container{
-        height: 70vh;
+        left: 100px;
+        height: 750px;
     }
 }
 @media screen and (min-width:1200px){
     .flex-container{
         padding: 50px;
-        height:1000px;
+        height:750px;
     }
 }
